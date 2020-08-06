@@ -5,12 +5,12 @@ body {
 h1 {
     text-align: center;
     padding: 20px 20px 50px 20px;
+    font-size: 175%;
 }
 
 div.box {
     border: 1.5px solid black;
     margin: 10px;
-    /* width: 482px; */
     height: 300px;
     padding: 0px;
     position: relative;
@@ -20,13 +20,14 @@ div.box {
 
 p.sec_heading {
     border: 1.5px solid black;
-    width: 70px;
+    width: 100px;
     margin: 0px;
     padding: 10px;
     position: absolute;
     right: 0;
     top: 0;
-    /*     left: 1424px; */
+    font-size: 125%;
+    text-align: center;
 }
 
 p.sec_content {
@@ -70,7 +71,6 @@ p.sec_content {
     .col-lg-11,
     .col-lg-12 {
         float: left;
-        /* border: 1px solid green; */
     }
     .col-lg-1 {
         width: 8.33%;
@@ -127,7 +127,6 @@ p.sec_content {
     .col-md-11,
     .col-md-12 {
         float: left;
-        /* border: 1px solid green; */
     }
     .col-md-1 {
         width: 8.33%;
