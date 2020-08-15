@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+}
+
+#header-nav {
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+}
+
+a.navbar-brand {
+    margin: 0px 16px;
+    padding-top: 16px;
+}
+
+.navbar-collapse {
+    background-color: #212529;
+}
+
+li.nav-item {
+    text-align: center;
+    font-size: larger;
+}
+
+p#menu-heading {
+    font-size: 2.2rem;
+    padding: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+}
+
+.maincontent {
+    background: cornsilk;
+    padding: 10px 40px 20px 40px;
+}
