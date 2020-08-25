@@ -106,16 +106,16 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 // var chosenCategoryShortName = ....
 
                 chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
-                alert(chosenCategoryShortName);
 
-                var html = categoryHtml;
+                var finalHtml = "<section class='row'>";
 
-                html =
-                    insertProperty(html,
-                        "randomCategoryShortName",
-                        chosenCategoryShortName);
+                var html = homeHtml;
 
+                html = insertProperty(html,
+                    "randomCategoryShortName",
+                    chosenCategoryShortName);
 
+                finalHtml += html;
 
                 // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
                 // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -129,9 +129,9 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 // it into the home html snippet.
                 //
 
-                var homeHtmlToInsertIntoMainPage = insertHtml("#main-content", html);
+                var homeHtmlToInsertIntoMainPage = insertHtml("#main-content", finalHtml);
 
-
+                homeHtmlToInsertIntoMainPage;
                 // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
                 // Use the existing insertHtml function for that purpose. Look through this code for an example
                 // of how to do that.
