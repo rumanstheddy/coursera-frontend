@@ -83,7 +83,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
             allCategoriesUrl,
-            buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
+            buildAnbuildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
             true); // Explicitly setting the flag to get JSON from server processed into an object literal
     });
     // *** finish **
@@ -107,7 +107,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
 
                 chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
 
-                var html = categoryHtml;
+                var html = homeHtmlUrl;
 
                 html =
                     insertProperty(html,
