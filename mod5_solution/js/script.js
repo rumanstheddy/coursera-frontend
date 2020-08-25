@@ -99,6 +99,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
             function(homeHtml) {
 
                 var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+                console.log(chosenCategoryShortName);
 
                 // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
                 // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
@@ -114,6 +115,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                         "randomCategoryShortName",
                         chosenCategoryShortName);
 
+                console.log(html);
 
 
                 // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
